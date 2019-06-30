@@ -59,11 +59,8 @@ URL: https://shrouded-everglades-88448.herokuapp.com/api/login
 Request:
 ```bash
 curl -X POST \
-  https://shrouded-everglades-88448.herokuapp.com/api/login \
-  -H 'cache-control: no-cache' \
-  -H 'content-type: application/x-www-form-urlencoded' \
-  -H 'postman-token: 633d4368-846f-5bbc-2357-90271d0d1cc0' \
-  -d 'course_id=5c7d1c132fc40002e4b9d510&faculty=5cc935c979815939e8ec906b'
+  https://shrouded-everglades-88448.herokuapp.com/api/login
+
   ```
 Response:
 ```json
@@ -78,9 +75,7 @@ Request:
 ```bash
 curl -X GET \
   'https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001' \
-  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InRlc3RVc3JlIiwiZW1haWwiOiJ0ZXN0dXNlckB0ZXN0dXNlci5jb20ifSwiaWF0IjoxNTYxODkwODQzLCJleHAiOjE1NjIzMjI4NDN9.EP7v0-TAuKYmFh04KIoqYXh7Ve_PHjAmZdeoU4To8Bk' \
-  -H 'cache-control: no-cache' \
-  -H 'postman-token: d5cca96a-0542-c0c1-19d6-b696301ff8c2'
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InRlc3RVc3JlIiwiZW1haWwiOiJ0ZXN0dXNlckB0ZXN0dXNlci5jb20ifSwiaWF0IjoxNTYxODkwODQzLCJleHAiOjE1NjIzMjI4NDN9.EP7v0-TAuKYmFh04KIoqYXh7Ve_PHjAmZdeoU4To8Bk'
 ```
 Response:
 
@@ -105,9 +100,7 @@ Request:
 ```bash
 curl -X GET \
   'https://shrouded-everglades-88448.herokuapp.com/api/branch/5/0?city=MUMBAI&bankname=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED' \
-  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InRlc3RVc3JlIiwiZW1haWwiOiJ0ZXN0dXNlckB0ZXN0dXNlci5jb20ifSwiaWF0IjoxNTYxODkwODQzLCJleHAiOjE1NjIzMjI4NDN9.EP7v0-TAuKYmFh04KIoqYXh7Ve_PHjAmZdeoU4To8Bk' \
-  -H 'cache-control: no-cache' \
-  -H 'postman-token: 4f0bdb00-92b6-f9fc-e11b-2a7e826cdff8'
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InRlc3RVc3JlIiwiZW1haWwiOiJ0ZXN0dXNlckB0ZXN0dXNlci5jb20ifSwiaWF0IjoxNTYxODkwODQzLCJleHAiOjE1NjIzMjI4NDN9.EP7v0-TAuKYmFh04KIoqYXh7Ve_PHjAmZdeoU4To8Bk'
   ```
   Response:
   ```json
