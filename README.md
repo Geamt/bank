@@ -16,6 +16,12 @@ You can take a reference of below websites for help or download the above tools.
 
 
 ---
+
+### Constrains
+
+Due to limited size of heroku postgres sql we have considered only limited data.
+
+---
 #### Install dependencies
 ```
 npm i
