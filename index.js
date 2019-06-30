@@ -60,18 +60,18 @@ app.get('/api/bank/:limit/:offset',verifyToken,async (req,res,next) => {  // url
  * @returns - return josn data of banks
  */
 app.get('/api/branch/:limit/:offset',verifyToken,async (req,res,next) => { 
-    var bnakname = req.query.bnakname;
+    var bankname = req.query.bankname;
     var city = req.query.city;
     var limit = req.params.limit > 0 ? req.params.limit : null;
     var offset = req.params.offset > 0 ? req.params.offset : null;
 
-    //console.log(city,bnakname,limit,offset);
+    //console.log(city,bankname,limit,offset);
     
-    if((bnakname != undefined && String(bnakname).length > 0) && (city != undefined && String(city).length > 0)) 
+    if((bankname != undefined && String(bankname).length > 0) && (city != undefined && String(city).length > 0)) 
     {
         try{
 
-            const {rows} = await client.query(`select * from branches as br,banks as b where br.bank_id=b.id and br.city = $1 and b.name = $2 limit ${limit} offset ${offset}`,[city,bnakname]);
+            const {rows} = await client.query(`select * from branches as br,banks as b where br.bank_id=b.id and br.city = $1 and b.name = $2 limit ${limit} offset ${offset}`,[city,bankname]);
             console.log(rows);
             res.setHeader('content-type', 'application/json');
             res.send(JSON.stringify(rows));
