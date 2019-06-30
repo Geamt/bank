@@ -26,7 +26,9 @@ app.use(express.urlencoded({ extended : true}))
 app.use(express.static("public"));
 
 start()
-
+app.get('/',(req,res)=>{
+    res.send("Hello world");
+});
 /**
  * @description - Provide route to get/fetch data by ifsc number of bank
  * 
