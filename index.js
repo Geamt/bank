@@ -13,12 +13,18 @@ app.use(express.json());
 
 // Create instance of Client for Database operations
 const client = new Client({
-    user: 'hardik',
-    password: '',
-    host: '127.0.0.1',
-    port: 5432,
-    database: 'hello'
+    connectionString: process.env.DATABASE_URL
+    // user: 'hardik',
+    // password: '',
+    // host: '127.0.0.1',
+    // port: 5432,
+    // database: 'hello'
 })
+
+app.use(express.json());
+app.use(express.urlencoded({ extended : true}))
+app.use(express.static("public"));
+
 start()
 
 /**
