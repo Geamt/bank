@@ -51,10 +51,11 @@ npm run lint-fix
 - two routes for geting data of banks
 
 - Routes
-    - 1) Syntax : http://localhost/api/bank/:limit/:offset?ifsc=IFSC number of bank
+    - 1) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/bank/:limit/:offset?ifsc=IFSC number of bank
 
-        example : http://localhost/api/bank/5/0?ifsc=ABHY0065001
-    - 2) Syntax : http://localhost/api/branch/:limit/:offset?city=CITYNAME&bankname=BANK NAME
+        example : https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001
 
-        example : http://localhost/api/branch/5/0/?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED
-        
+    - 2) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/branch/:limit/:offset?city=CITYNAME&bankname=BANK NAME
+
+        example : https://shrouded-everglades-88448.herokuapp.com/api/branch/5/0?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED
+
