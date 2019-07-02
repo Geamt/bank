@@ -44,11 +44,11 @@ npm start
 - Routes
     - 1) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/bank?ifsc=IFSC number of bank&limit=1&offset=0 
 
-        example : https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001&limit=1&offset=0
+        example : https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001&limit=limit&offset=offset
 
-    - 2) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/branch?city=CITYNAME&bankname=BANK NAME&limit=5&offset=0
+    - 2) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/branch?city=CITYNAME&bankname=BANK NAME&limit=limit&offset=offset
 
-        example : https://shrouded-everglades-88448.herokuapp.com/api/branch?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED
+        example : https://shrouded-everglades-88448.herokuapp.com/api/branch?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED&limit=5&offset=0
 
 ---
 
@@ -69,12 +69,13 @@ Response:
 }
 ```
 #### Get bank by IFSC Code
-URL: https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001
+URL: https://shrouded-everglades-88448.herokuapp.com/api/bank?ifsc=ABHY0065001&limit=1&offset=0
 
 Request:
 ```bash
 curl -X GET \
-  'https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001' \
+  curl -X GET \
+  'https://shrouded-everglades-88448.herokuapp.com/api/bank?ifsc=ABHY0065001&limit=1&offset=0' \
   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InRlc3RVc3JlIiwiZW1haWwiOiJ0ZXN0dXNlckB0ZXN0dXNlci5jb20ifSwiaWF0IjoxNTYxODkwODQzLCJleHAiOjE1NjIzMjI4NDN9.EP7v0-TAuKYmFh04KIoqYXh7Ve_PHjAmZdeoU4To8Bk'
 ```
 Response:
@@ -94,12 +95,12 @@ Response:
 ```
 
 #### Get bank by bank name and city
-URL: https://shrouded-everglades-88448.herokuapp.com/api/branch/5/0?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED
+URL: https://shrouded-everglades-88448.herokuapp.com/api/branch?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED&limit=5&offset=0
 
 Request:
 ```bash
 curl -X GET \
-  'https://shrouded-everglades-88448.herokuapp.com/api/branch/5/0?city=MUMBAI&bankname=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED' \
+  'https://shrouded-everglades-88448.herokuapp.com/api/branch?city=MUMBAI&bankname=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED&limit=5&offset=0' \
   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InRlc3RVc3JlIiwiZW1haWwiOiJ0ZXN0dXNlckB0ZXN0dXNlci5jb20ifSwiaWF0IjoxNTYxODkwODQzLCJleHAiOjE1NjIzMjI4NDN9.EP7v0-TAuKYmFh04KIoqYXh7Ve_PHjAmZdeoU4To8Bk'
   ```
   Response:
