@@ -42,13 +42,13 @@ npm start
 - two routes for geting data of banks
 
 - Routes
-    - 1) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/bank/:limit/:offset?ifsc=IFSC number of bank
+    - 1) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/bank?ifsc=IFSC number of bank&limit=1&offset=0 
 
-        example : https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001
+        example : https://shrouded-everglades-88448.herokuapp.com/api/bank/1/0?ifsc=ABHY0065001&limit=1&offset=0
 
-    - 2) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/branch/:limit/:offset?city=CITYNAME&bankname=BANK NAME
+    - 2) Syntax : http://shrouded-everglades-88448.herokuapp.com/api/branch?city=CITYNAME&bankname=BANK NAME&limit=5&offset=0
 
-        example : https://shrouded-everglades-88448.herokuapp.com/api/branch/5/0?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED
+        example : https://shrouded-everglades-88448.herokuapp.com/api/branch?city=MUMBAI&bankname=ABHYUDAYA COOPERATIVE BANK LIMITED
 
 ---
 

@@ -34,10 +34,10 @@ app.get('/',(req,res)=>{
  * 
  * @returns - return json data of banks
  */
-app.get('/api/bank/:limit/:offset',verifyToken,async (req,res,next) => {  // url for queryString '/api/getAll/'
+app.get('/api/bank',verifyToken,async (req,res,next) => {  // url for queryString '/api/getAll/'
     var ifsc = req.query.ifsc
-    var limit = req.params.limit > 0 ? req.params.limit : null;
-    var offset = req.params.offset > 0 ? req.params.offset : null;
+    var limit = req.query.limit > 0 ? req.query.limit : null;
+    var offset = req.query.offset > 0 ? req.query.offset : null;
 
     //console.log(ifsc,limit,offset);
     
@@ -67,11 +67,11 @@ app.get('/api/bank/:limit/:offset',verifyToken,async (req,res,next) => {  // url
  * 
  * @returns - return josn data of banks
  */
-app.get('/api/branch/:limit/:offset',verifyToken,async (req,res,next) => { 
+app.get('/api/branch',verifyToken,async (req,res,next) => { 
     var bankname = req.query.bankname;
     var city = req.query.city;
-    var limit = req.params.limit > 0 ? req.params.limit : null;
-    var offset = req.params.offset > 0 ? req.params.offset : null;
+    var limit = req.query.limit > 0 ? req.query.limit : null;
+    var offset = req.query.offset > 0 ? req.query.offset : null;
 
     //console.log(city,bankname,limit,offset);
     
